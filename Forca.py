@@ -16,3 +16,11 @@ def jogo_forca():
             letras_erradas.append(letra)
             tentativas -= 1
             print(f"Letra errada! Tentativas restantes: {tentativas}")
+        
+        if all(letra in letras_certas for letra in palavra):
+            print(f"\nParabéns! Você acertou a palavra: {palavra}")
+            return
+
+    print(f"\nFim de jogo! A palavra era: {palavra}")
+
+jogo_forca()
