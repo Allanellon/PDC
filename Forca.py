@@ -1,3 +1,10 @@
+def obter_escolha(jogador):
+    escolha = input(f"{jogador}, escolha Pedra, Papel ou Tesoura: ").lower()
+    while escolha not in ["pedra", "papel", "tesoura"]:
+        print("Escolha inválida. Tente novamente.")
+        escolha = input(f"{jogador}, escolha Pedra, Papel ou Tesoura: ").lower()
+    return escolha
+
 def jogo_forca():
     palavra = receber_palavra()
     letras_certas = []
