@@ -18,3 +18,6 @@ Este é um projeto simples de **Jogo da Forca (versão em texto)** desenvolvido 
 - Laços de repetição (`while`, `for`)
 - Listas e strings
 
+## 📹 Link do vídeo 
+
+https://youtu.be/ffhPQVIrqeE
