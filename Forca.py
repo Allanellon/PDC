@@ -1,9 +1,16 @@
-def obter_escolha(jogador):
-    escolha = input(f"{jogador}, escolha Pedra, Papel ou Tesoura: ").lower()
-    while escolha not in ["pedra", "papel", "tesoura"]:
-        print("Escolha inválida. Tente novamente.")
-        escolha = input(f"{jogador}, escolha Pedra, Papel ou Tesoura: ").lower()
-    return escolha
+def receber_palavra():
+    palavra = input("Jogador 1, digite a palavra secreta: ").lower()
+    print("\n" * 50)  # Limpa a tela (truque simples)
+    return palavra
+
+def mostrar_progresso(palavra, letras_certas):
+    progresso = ""
+    for letra in palavra:
+        if letra in letras_certas:
+            progresso += letra + " "
+        else:
+            progresso += "_ "
+    print(progresso)
 
 def jogo_forca():
     palavra = receber_palavra()
