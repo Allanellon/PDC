@@ -12,6 +12,9 @@ def mostrar_progresso(palavra, letras_certas):
             progresso += "_ "
     print(progresso)
 
+def obter_letra():
+    return input("Jogador 2, digite uma letra: ").lower()
+
 def jogo_forca():
     palavra = receber_palavra()
     letras_certas = []
