@@ -1,6 +1,6 @@
 def receber_palavra():
     palavra = input("Jogador 1, digite a palavra secreta: ").lower()
-    print("\n" * 50)  # Limpa a tela (truque simples)
+    print("\n" * 50)  
     return palavra
 
 def mostrar_progresso(palavra, letras_certas):
